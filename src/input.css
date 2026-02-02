@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --dark-mode: class;
+}
+
+@source "../**/*.html";
+@source "../**/*.js";
