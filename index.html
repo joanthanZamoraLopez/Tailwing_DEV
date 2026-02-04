@@ -9,7 +9,7 @@
   <script src="./js/theme.js" defer></script>
   <style>
     @media (max-width: 500px) {
-      nav {
+      .contenedor_nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -26,7 +26,7 @@
 
   <!-- HEADER -->
   <header class="sticky top-0 z-10">
-    <nav class="
+    <nav class="contenedor_nav
         p-4 flex justify-between items-center
          dark:bg-gray-800/80
         backdrop-blur-sm
@@ -36,11 +36,11 @@
       </h1>
 
       <div class="flex gap-4 items-center">
-        <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-extrabold">INICIO</a>
+        <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-extrabold max-[500px]:text-2xl">INICIO</a>
 
-        <a href="nosotros.html" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 transition font-extrabold">NOSOTROS</a>
+        <a href="nosotros.html" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 transition font-extrabold max-[500px]:text-2xl">NOSOTROS</a>
 
-        <a href="contacto.html" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 transition font-extrabold">CONTACTO</a>
+        <a href="contacto.html" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 transition font-extrabold max-[500px]:text-2xl">CONTACTO</a>
       </div>
     </nav>
   </header>

@@ -872,6 +872,18 @@
       justify-content: center;
     }
   }
+  .max-\[500px\]\:text-2xl {
+    @media (width < 500px) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .max-\[500px\]\:text-3xl {
+    @media (width < 500px) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
   .max-\[450px\]\:flex {
     @media (width < 450px) {
       display: flex;
@@ -885,6 +897,12 @@
   .max-\[400px\]\:justify-center {
     @media (width < 400px) {
       justify-content: center;
+    }
+  }
+  .max-\[300px\]\:text-3xl {
+    @media (width < 300px) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .max-\[200px\]\:flex {
@@ -920,6 +938,12 @@
   .min-\[400px\]\:justify-center {
     @media (width >= 400px) {
       justify-content: center;
+    }
+  }
+  .min-\[500px\]\:text-3xl {
+    @media (width >= 500px) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .sm\:flex {
@@ -1094,6 +1118,12 @@
   .\[200px\]\:justify-center {
     &:is(200px) {
       justify-content: center;
+    }
+  }
+  .\[500px\]\:text-3xl {
+    &:is(500px) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
 }
