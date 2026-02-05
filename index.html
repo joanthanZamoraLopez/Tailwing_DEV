@@ -3,80 +3,131 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- ESTA LÍNEA ES LA QUE ARREGLA EL TAMAÑO EN MÓVILES -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kine Salud - Inicio</title>
+  <title>Inicio</title>
 
   <link rel="stylesheet" href="./css/tailwind.css">
   <script src="./js/theme.js" defer></script>
+  <style>
+    @media (max-width: 500px) {
+      .contenedor_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
-<body class="min-h-screen flex flex-col bg-[url(/src/img4.png)] bg-cover bg-no-repeat bg-fixed bg-[position:20%_65%]">
+<body class="
+    min-h-screen flex flex-col
+    bg-[url(/src/img4.png)]
+    bg-cover bg-no-repeat bg-fixed bg-position-[20%_65%]
+  ">
 
   <!-- HEADER -->
   <header class="sticky top-0 z-10">
-    <nav class="p-4 flex flex-col sm:flex-row justify-between items-center bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm gap-4">
-      
-      <!-- Título con gradiente corregido -->
-      <h1 class="font-extrabold text-3xl bg-gradient-to-r from-neutral-700 to-pink-500 bg-clip-text text-transparent">
+    <nav class="contenedor_nav
+        p-4 flex justify-between items-center
+         dark:bg-gray-800/80
+        backdrop-blur-sm
+      ">
+      <h1 class=" font-extrabold text-3xl text-gray-900 box-decoration-slice bg-linear-to-r from-neutral-700 to-pink-100  max-[500px]:flex  max-[500px]:justify-center ">
         KINE SALUD
       </h1>
 
-      <!-- Enlaces con mejor área de toque para móvil -->
-      <div class="flex gap-6 items-center">
-        <a href="index.html" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 font-extrabold text-lg sm:text-base">INICIO</a>
-        <a href="nosotros.html" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition font-extrabold text-lg sm:text-base">NOSOTROS</a>
-        <a href="contacto.html" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition font-extrabold text-lg sm:text-base">CONTACTO</a>
+      <div class="flex gap-4 items-center">
+        <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-extrabold max-[500px]:text-2xl">INICIO</a>
+
+        <a href="nosotros.html" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 transition font-extrabold max-[500px]:text-2xl">NOSOTROS</a>
+
+        <a href="contacto.html" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 transition font-extrabold max-[500px]:text-2xl">CONTACTO</a>
       </div>
     </nav>
   </header>
 
   <!-- MAIN -->
-  <main class="flex-1 p-4 sm:p-8 flex justify-center items-center">
-    <div class="max-w-md w-full text-center bg-white/90 dark:bg-neutral-800/90 backdrop-blur rounded-xl p-6 shadow-lg">
-      <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+  <main class="flex-1 p-8 flex justify-center items-center min-h-screen">
+    <div class="
+        max-w-md text-center
+         dark:bg-neutral-800/90
+        backdrop-blur
+        rounded-xl p-6 shadow-lg
+      ">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
        KINE SALUD
       </h2>
 
-      <div class="flex flex-col items-center gap-4 text-gray-800 dark:text-gray-200">
-        <!-- Imagen con tamaño fijo para que no se deforme -->
-        <img src="src/img5.png" loading="lazy" alt="personal training" class="w-24 h-24 rounded-full object-cover border-2 border-indigo-500 shadow-md">
-        <p class="leading-relaxed">
-          Personal training especializado en brindar servicios de rehabilitación física y entrenamiento personalizado para mejorar la salud y el bienestar de nuestros clientes.
-        </p>
-      </div>
+<div class="overflow-visible rounded-lg mb-4 flex justify-center items-center">
+  <img src="src/img5.png" loading="lazy" alt="personal training" class="w-20 h-20  rounded-full">
+  personal training especializado en brindar servicios de rehabilitación física y entrenamiento personalizado para mejorar la salud y el bienestar de nuestros clientes.
+</div>
     </div>
   </main>
 
   <!-- FOOTER -->
-  <footer class="py-8 bg-gray-100 dark:bg-neutral-900 border-t dark:border-neutral-700">
-    <div class="container mx-auto flex flex-col items-center gap-8 px-4">
+  <footer class="py-8 bg-gray-600 dark:bg-neutral-800  dark:border-neutral-700">
+    <div class="container mx-auto flex flex-col items-center gap-6">
 
-      <!-- Redes Sociales -->
+      <!-- Redes -->
       <nav class="flex gap-6" aria-label="Redes sociales">
+
         <!-- Instagram -->
-        <a href="https://www.instagram.com" target="_blank" class="p-3 rounded-full bg-white dark:bg-neutral-700 text-gray-600 dark:text-gray-300 shadow-sm transition-all hover:scale-110 hover:text-pink-600">
-          <svg xmlns="http://www.w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <a href="https://www.instagram.com" target="_blank" class="p-3 rounded-full bg-white dark:bg-neutral-700
+                 text-lime-500 dark:text-gray-300 shadow-sm
+                 transition-all duration-300 ease-out
+                 hover:scale-110 hover:-translate-y-1
+                 hover:text-blue-800 hover:shadow-xl hover:shadow-yellow-500/30">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+            stroke="#607d8b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M16.5 7.5l0 .01" />
+          </svg>
+
         </a>
 
         <!-- Facebook -->
-        <a href="https://www.facebook.com" target="_blank" class="p-3 rounded-full bg-white dark:bg-neutral-700 text-gray-600 dark:text-gray-300 shadow-sm transition-all hover:scale-110 hover:text-blue-600">
-          <svg xmlns="http://www.w3.org" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.95v-7.05h-2.8V12h2.8V9.6c0-2.77 1.65-4.3 4.18-4.3 1.21 0 2.48.22 2.48.22v2.73h-1.4c-1.38 0-1.8.85-1.8 1.72V12h3.06l-.49 2.9h-2.57V22A10 10 0 0 0 22 12z" /></svg>
+        <a href="https://www.facebook.com" target="_blank" class="p-3 rounded-full bg-white dark:bg-neutral-700
+                 text-gray-600 dark:text-gray-300 shadow-sm
+                 transition-all duration-300 ease-out
+                 hover:scale-110 hover:-translate-y-1
+                 hover:text-blue-600 hover:shadow-xl hover:shadow-blue-500/30">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M22 12a10 10 0 1 0-11.5 9.95v-7.05h-2.8V12h2.8V9.6c0-2.77 1.65-4.3 4.18-4.3 1.21 0 2.48.22 2.48.22v2.73h-1.4c-1.38 0-1.8.85-1.8 1.72V12h3.06l-.49 2.9h-2.57V22A10 10 0 0 0 22 12z" />
+          </svg>
         </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com" target="_blank" class="p-3 rounded-full bg-white dark:bg-neutral-700
+                 text-gray-600 dark:text-gray-300 shadow-sm
+                 transition-all duration-300 ease-out
+                 hover:scale-110 hover:-translate-y-1
+                 hover:text-black dark:hover:text-white
+                 hover:shadow-xl hover:shadow-black/30">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M16.083 2h-4.083a1 1 0 0 0 -1 1v11.5a1.5 1.5 0 1 1 -2.519 -1.1l.12 -.1a1 1 0 0 0 .399 -.8v-4.326a1 1 0 0 0 -1.23 -.974a7.5 7.5 0 0 0 1.73 14.8l.243 -.005a7.5 7.5 0 0 0 7.257 -7.495v-2.7l.311 .153c1.122 .53 2.333 .868 3.59 .993a1 1 0 0 0 1.099 -.996v-4.033a1 1 0 0 0 -.834 -.986a5.005 5.005 0 0 1 -4.097 -4.096a1 1 0 0 0 -.986 -.835z" />
+          </svg>
+        </a>
+
       </nav>
 
-      <!-- Información de Contacto Centrada -->
-      <div class="text-center space-y-2 text-sm text-gray-600 dark:text-gray-400">
-        <p><strong>Celular:</strong> +52 11 1234-5678</p>
-        <p><strong>Email:</strong> info@kinesalud.com</p>
-        <p><strong>Dirección:</strong> Av. Principal 123, Ciudad, País</p>
-      </div>
-
-      <p class="text-xs text-gray-500">
-        © 2026 Kine Salud — Todos los derechos reservados
+      <p class="text-sm text-green-500 dark:text-gray-400">
+        © 2026 Mi Sitio Web — Todos los derechos reservados
       </p>
+    </div>
+
+     <div>
+      <p class=" font-extralight text-yellow-500 dark:text-gray-300 max-[500px]:flex  max-[500px]:justify-center">Celular: +52 11 1234-5678</p>
+      <p class=" font-extralight text-yellow-500 dark:text-gray-300 max-[500px]:flex  max-[500px]:justify-center">Email: info@mi-sitio-web.com</p>
+      <p class=" font-extralight text-yellow-500 dark:text-gray-300 max-[500px]:flex  max-[500px]:justify-center">Direccion: Av. Principal 123, Ciudad, País</p>
     </div>
   </footer>
 
 </body>
+
 </html>
